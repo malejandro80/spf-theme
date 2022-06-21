@@ -163,6 +163,7 @@
                               </div>
                             </div>
                           </details>
+                
                         {%- else -%}
                           <a href="{{ link.url }}" class="menu-drawer__menu-item list-menu__item link link--text focus-inset{% if link.current %} menu-drawer__menu-item--active{% endif %}"{% if link.current %} aria-current="page"{% endif %}>
                             {{ link.title | escape }}
@@ -571,6 +572,8 @@
         {%- endif -%}
       </a>
     </div>
+  
+  
   </header>
 </{% if section.settings.enable_sticky_header %}sticky-header{% else %}div{% endif %}>
 
